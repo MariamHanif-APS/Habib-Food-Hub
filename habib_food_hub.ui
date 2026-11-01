@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HabibFoodHubWindow</class>
+ <widget class="QMainWindow" name="HabibFoodHubWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>1440</width><height>900</height></rect></property>
+  <property name="minimumSize"><size><width>1100</width><height>700</height></size></property>
+  <property name="windowTitle"><string>Habib Food Hub</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="rootLayout">
+    <property name="spacing"><number>0</number></property>
+    <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+    <item>
+     <widget class="QStackedWidget" name="mainStack">
+      <widget class="QWidget" name="loginPage">
+       <layout class="QGridLayout" name="loginOuterLayout">
+        <item row="0" column="0"><spacer name="loginTopSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>20</width><height>80</height></size></property></spacer></item>
+        <item row="1" column="0"><spacer name="loginLeftSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>100</width><height>20</height></size></property></spacer></item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="loginCard">
+          <property name="minimumSize"><size><width>470</width><height>520</height></size></property>
+          <property name="maximumSize"><size><width>520</width><height>600</height></size></property>
+          <layout class="QVBoxLayout" name="loginCardLayout">
+           <property name="spacing"><number>14</number></property><property name="leftMargin"><number>42</number></property><property name="topMargin"><number>38</number></property><property name="rightMargin"><number>42</number></property><property name="bottomMargin"><number>38</number></property>
+           <item><widget class="QLabel" name="loginMark"><property name="text"><string>H</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="minimumSize"><size><width>56</width><height>56</height></size></property><property name="maximumSize"><size><width>56</width><height>56</height></size></property></widget></item>
+           <item><widget class="QLabel" name="loginTitle"><property name="text"><string>Welcome to Habib Food Hub</string></property></widget></item>
+           <item><widget class="QLabel" name="loginSubtitle"><property name="text"><string>Campus food discovery, ordering and inventory management.</string></property><property name="wordWrap"><bool>true</bool></property></widget></item>
+           <item><spacer name="loginGap"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>20</width><height>12</height></size></property></spacer></item>
+           <item><widget class="QLabel" name="emailLabel"><property name="text"><string>Email address</string></property></widget></item>
+           <item><widget class="QLineEdit" name="emailInput"><property name="text"><string>mariam.hanif@st.habib.edu.pk</string></property><property name="placeholderText"><string>name@habib.edu.pk</string></property></widget></item>
+           <item><widget class="QLabel" name="passwordLabel"><property name="text"><string>Password</string></property></widget></item>
+           <item><widget class="QLineEdit" name="passwordInput"><property name="text"><string>password</string></property><property name="echoMode"><enum>QLineEdit::Password</enum></property></widget></item>
+           <item><widget class="QLabel" name="loginRoleLabel"><property name="text"><string>Continue as</string></property></widget></item>
+           <item><widget class="QComboBox" name="loginRoleCombo"><item><property name="text"><string>Student</string></property></item><item><property name="text"><string>Food Vendor</string></property></item><item><property name="text"><string>Administrator</string></property></item></widget></item>
+           <item><widget class="QPushButton" name="loginButton"><property name="text"><string>Log in</string></property></widget></item>
+           <item><widget class="QPushButton" name="vendorRegistrationButton"><property name="text"><string>Register a new food vendor</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2"><spacer name="loginRightSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>100</width><height>20</height></size></property></spacer></item>
+        <item row="2" column="0"><spacer name="loginBottomSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>20</width><height>80</height></size></property></spacer></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="appPage">
+       <layout class="QHBoxLayout" name="appLayout">
+        <property name="spacing"><number>0</number></property><property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+        <item>
+         <widget class="QFrame" name="sidebar">
+          <property name="minimumSize"><size><width>260</width><height>0</height></size></property><property name="maximumSize"><size><width>260</width><height>16777215</height></size></property>
+          <layout class="QVBoxLayout" name="sidebarLayout">
+           <property name="spacing"><number>12</number></property><property name="leftMargin"><number>18</number></property><property name="topMargin"><number>24</number></property><property name="rightMargin"><number>18</number></property><property name="bottomMargin"><number>22</number></property>
+           <item><widget class="QLabel" name="brandLabel"><property name="text"><string>H  Habib Food Hub</string></property></widget></item>
+           <item><widget class="QLabel" name="brandSubtitle"><property name="text"><string>CAMPUS DINING</string></property></widget></item>
+           <item><spacer name="sideGap"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>20</width><height>12</height></size></property></spacer></item>
+           <item><widget class="QLabel" name="previewLabel"><property name="text"><string>PREVIEW AS</string></property></widget></item>
+           <item><widget class="QComboBox" name="roleCombo"><item><property name="text"><string>Student</string></property></item><item><property name="text"><string>Food Vendor</string></property></item><item><property name="text"><string>Administrator</string></property></item></widget></item>
+           <item><widget class="QLabel" name="workspaceLabel"><property name="text"><string>WORKSPACE</string></property></widget></item>
+           <item><widget class="QListWidget" name="navigationList"/></item>
+           <item><widget class="QFrame" name="profileFrame"><layout class="QHBoxLayout" name="profileLayout"><property name="leftMargin"><number>8</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>8</number></property><property name="bottomMargin"><number>4</number></property><item><widget class="QLabel" name="profileAvatar"><property name="text"><string>MH</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="minimumSize"><size><width>42</width><height>42</height></size></property><property name="maximumSize"><size><width>42</width><height>42</height></size></property></widget></item><item><layout class="QVBoxLayout" name="profileTextLayout"><property name="spacing"><number>2</number></property><item><widget class="QLabel" name="profileName"><property name="text"><string>Mariam Hanif</string></property></widget></item><item><widget class="QLabel" name="profileRole"><property name="text"><string>Student account</string></property></widget></item></layout></item></layout></widget></item>
+           <item><widget class="QPushButton" name="logoutButton"><property name="text"><string>Log out</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="mainArea">
+          <layout class="QVBoxLayout" name="mainAreaLayout">
+           <property name="spacing"><number>0</number></property><property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+           <item><widget class="QFrame" name="topbar"><property name="minimumSize"><size><width>0</width><height>76</height></size></property><property name="maximumSize"><size><width>16777215</width><height>76</height></size></property><layout class="QHBoxLayout" name="topbarLayout"><property name="leftMargin"><number>30</number></property><property name="rightMargin"><number>30</number></property><item><widget class="QLabel" name="breadcrumbLabel"><property name="text"><string>Food Hub  /  Dashboard</string></property></widget></item><item><spacer name="topbarSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QPushButton" name="notificationButton"><property name="text"><string>Notifications</string></property></widget></item><item><widget class="QPushButton" name="quickActionButton"><property name="text"><string>Find food</string></property></widget></item></layout></widget></item>
+           <item>
+            <widget class="QStackedWidget" name="contentStack">
+             <widget class="QWidget" name="studentDashboardPage"><layout class="QVBoxLayout" name="studentDashboardLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="foodVendorsPage"><layout class="QVBoxLayout" name="foodVendorsLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="menuCartPage"><layout class="QVBoxLayout" name="menuCartLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="studentOrdersPage"><layout class="QVBoxLayout" name="studentOrdersLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="vendorDashboardPage"><layout class="QVBoxLayout" name="vendorDashboardLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="inventoryPage"><layout class="QVBoxLayout" name="inventoryLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="incomingOrdersPage"><layout class="QVBoxLayout" name="incomingOrdersLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="vendorProfilePage"><layout class="QVBoxLayout" name="vendorProfileLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="adminDashboardPage"><layout class="QVBoxLayout" name="adminDashboardLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="vendorApplicationsPage"><layout class="QVBoxLayout" name="vendorApplicationsLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+             <widget class="QWidget" name="allVendorsPage"><layout class="QVBoxLayout" name="allVendorsLayout"><property name="leftMargin"><number>30</number></property><property name="topMargin"><number>26</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property></layout></widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
